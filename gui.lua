@@ -1,3 +1,4 @@
+print("[Linear Hub] Loading")
 local NotificationDuration = 5
 local LinearHubFolder = "LinearHub"
 local ConfigurationFolder = LinearHubFolder.."/Configurations"
@@ -3333,5 +3334,6 @@ function LinearHubLibrary:LoadConfiguration()
 		end)
 	end
 end
+print("[Linear Hub] Loaded")
 task.delay(9, LinearHubLibrary.LoadConfiguration, LinearHubLibrary)
 return LinearHubLibrary
