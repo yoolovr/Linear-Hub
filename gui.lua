@@ -3200,6 +3200,9 @@ function LinearHubLibrary:CreateWindow(Settings)
 					if not clicked then
 						local Success, Response = pcall(info.Callback)
 						clicked = true
+						if not Success then
+							ClosePrompt()
+						else
 							ClosePrompt()
 						end
 					end
