@@ -1,4 +1,3 @@
-print("[Linear Hub] Loading")
 local NotificationDuration = 5
 local LinearHubFolder = "LinearHub"
 local ConfigurationFolder = LinearHubFolder.."/Configurations"
